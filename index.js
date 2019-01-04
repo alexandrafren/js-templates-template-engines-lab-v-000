@@ -21,11 +21,11 @@ function createPost() {
 
 function postComment() {
   let commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
- 
-   let commenter = document.getElementById("commenterName").value;
-   let comment = document.getElementById("commentContent").value;
- 
-   let commentsSection= document.getElementById("comments")
- 
- commentsSection.innerHTML += commentTemplate({'comment': comment, 'commenter': commenter});
+
+  let commenter = document.getElementById("commenterName").value;
+  let comment = document.getElementById("commentContent").value;
+
+  let commentsSection= document.getElementById("comments")
+
+  commentsSection.innerHTML += commentTemplate({'comment': comment, 'commenter': commenter});
 }
