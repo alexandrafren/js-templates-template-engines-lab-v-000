@@ -3,7 +3,14 @@ function createPost() {
   let body = document.getElementById('postBody').value;
   let author = document.getElementById('postAuthor').value;
 
-  let postTemplate = document.getElementById('')
+  let pageTemplate = document.getElementById('page-template').innerHTML;
+  let templateFn = _.template(pageTemplate);
+
+  let postTemplate = document.getElementById('post-template').innerHTML;
+  let templateFnTwo = _.template(postTemplate);
+
+  let postDiv = document.getElementById('post');
+  let postHTML = templateFnTwo({body: body});
 
 
 }
