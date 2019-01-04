@@ -3,10 +3,9 @@ function createPost() {
   let body = document.getElementById('postBody').value;
   let author = document.getElementById('postAuthor').value;
 
-  let pageTemplate = document.getElementById('page-template').innerHTML;
-  let templateFn = _.template(pageTemplate);
+  let pageTemplate = _.template(document.getElementById('page-template').innerHTML;);
   let pageDiv = document.getElementById('posts');
-  let pageHTML = templateFn({title: title, author: author});
+  let pageHTML = pageTemplate({title: title, author: author});
   pageDiv.innerHTML += pageHTML;
 
   let postTemplate = document.getElementById('post-template').innerHTML;
