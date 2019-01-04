@@ -5,12 +5,12 @@ function createPost() {
 
   let pageTemplate = _.template(document.getElementById('page-template').innerHTML;);
   let pageDiv = document.getElementById('posts');
-  let pageHTML = pageTemplate({title: title, author: author});
+  let pageHTML = pageTemplate({'title': title, 'author': author});
   pageDiv.innerHTML += pageHTML;
 
   let postTemplate = _.template(document.getElementById('post-template').innerHTML;);
   let postDiv = document.getElementById('post');
-  let postHTML = templateFnTwo({body: body});
+  let postHTML = templateFnTwo({'body': body});
   postDiv.innerHTML += postHTML;
 
 }
