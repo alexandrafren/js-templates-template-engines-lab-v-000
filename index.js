@@ -10,7 +10,7 @@ function createPost() {
 
   let postTemplate = _.template(document.getElementById('post-template').innerHTML;);
   let postDiv = document.getElementById('post');
-  let postHTML = templateFnTwo({body: body});
+  let postHTML = postTemplate({body: body});
   postDiv.innerHTML += postHTML;
 
 }
