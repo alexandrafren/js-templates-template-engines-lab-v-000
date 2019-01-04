@@ -15,7 +15,6 @@ function createPost() {
   let postHTML = templateFnTwo({body: body});
   postDiv.innerHTML += postHTML;
 
-
 }
 
 
